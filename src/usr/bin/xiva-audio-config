@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Aumentar a frequência de interrupção RTC
+echo 2048 > /sys/class/rtc/rtc0/max_user_freq
+echo 2048 > /proc/sys/dev/hpet/max-user-freq
+
+#configurar o swapness para 10
+sysctl vm.swappiness=10
+sysctl vm.vfs_cache_pressure=100

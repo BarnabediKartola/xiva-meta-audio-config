@@ -1,0 +1,8 @@
+[Unit]
+Description=xiva-audio-config
+ 
+[Service]
+ExecStart=/usr/bin/xiva-audio-config
+ 
+[Install]
+WantedBy=multi-user.target
